@@ -119,11 +119,14 @@ For Spring integrated with Hibernate we use applicationContext.xml for configura
 * @ComponentScan - It specifies the base package to scan for different spring beans. If specific packages are not defined, scanning will occur from the package of the class that declares this annotation. So, either we can define following class in a base package or use this annotation.
 * class WebAppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer ( web.xml )
 *Instead of dispatcher-servlet.xml
-''' @Configuration
+'''
+@Configuration
 @EnableWebMvc
 @ComponentScan(basePackages = "com.ibm")
 public class WebMvcConfig implements WebMvcConfigurer 
-```
+
+Mvc Annotations
+
 * @Repository
 * @Transactional
 * @Controller
